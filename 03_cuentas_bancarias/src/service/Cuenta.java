@@ -1,29 +1,26 @@
-package Service;
+package service;
 
 public class Cuenta {
 	private String codigoCuenta;
 	private double saldo;
-	
 	public Cuenta(String codigoCuenta, double saldo) {
-		super();
 		this.codigoCuenta = codigoCuenta;
 		this.saldo = saldo;
 	}
-	public Cuenta(double saldo) {
-		super();
-		this.saldo = saldo;
+	public Cuenta(String codigoCuenta) {
+		this.codigoCuenta = codigoCuenta;
+		this.saldo=50;
 	}
-	//metodos
+	//métodos
 	public void ingresar(double cantidad) {
 		saldo+=cantidad;
 	}
 	public void extraer(double cantidad) {
 		saldo-=cantidad;
 	}
-	public double getSaldo()	{
+	public double getSaldo() {
 		return saldo;
 	}
-	
 	
 	
 }
